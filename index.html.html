@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrical Landscapes | Anna's Verses</title>
+    <style>
+        /* Base Styling */
+        :root {
+            --primary: #ff6f91;
+            --secondary: #ff9671;
+            --accent: #ffc75f;
+            --bg: #f9f7ff;
+            --text: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Bright Gradient Background */
+        .gradient-bg {
+            background: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Poem Section */
+        .anthology {
+            padding: 50px 10%;
+        }
+
+        .poem-card {
+            background: white;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-left: 8px solid var(--accent);
+        }
+
+        .poem-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .poem-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Portfolio Extras */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lyrical Landscapes</div>
+        <div>Anna’s Portfolio</div>
+    </nav>
+
+    <div class="gradient-bg">
+        <header>
+            <h1>Anna’s Verses</h1>
+            <p>Exploring the rhythm of the heart through ink.</p>
+            <div class="stats">
+                <div class="stat-box"><strong>50+</strong> Poems</div>
+                <div class="stat-box"><strong>3</strong> Books</div>
+                <div class="stat-box"><strong>2026</strong> Portfolio</div>
+            </div>
+        </header>
+
+        <section class="anthology">
+            <div class="poem-card">
+                <h2 class="poem-title">The Digital Dawn</h2>
+                <p>Pixels glow like morning dew,<br>
+                Binary stars in skies of blue.<br>
+                A world of code, a soul of fire,<br>
+                Climbing higher, ever higher.</p>
+            </div>
+
+            <div class="poem-card" style="border-left-color: var(--primary);">
+                <h2 class="poem-title">Echoes of Spring</h2>
+                <p>The garden wakes with a gentle sigh,<br>
+                Underneath the pastel sky.<br>
+                Petals dance on winds of gold,<br>
+                Stories of the earth, retold.</p>
+            </div>
+
+            <div class="poem-card" style="border-left-color: var(--secondary);">
+                <h2 class="poem-title">Midnight Coffee</h2>
+                <p>Warm ceramic, bitter bean,<br>
+                The quietest hour I’ve ever seen.<br>
+                Thoughts collide in the steam of night,<br>
+                Waiting for the morning light.</p>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Let's Collaborate</h2>
+            <p>Interested in a commission or just want to chat poetry?</p>
+            <div class="contact-info">
+                <a href="mailto:anna@example.com">anna@example.com</a>
+                <a href="tel:07123456789">07123456789</a>
+            </div>
+            <p style="margin-top: 40px; opacity: 0.5;">© 2026 Anna's Poetry Portfolio</p>
+        </footer>
+    </div>
+
+</body>
+</html>
